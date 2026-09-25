@@ -20,7 +20,7 @@ function App() {
 
     useEffect(() => {
         localStorage.setItem(HABITOS_STORAGE_KEY, JSON.stringify(habits));
-    }, []);
+    }, [habits]);
 
     const handleAddHabit = (e) => {
         e.preventDefault();
